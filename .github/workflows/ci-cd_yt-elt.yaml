@@ -7,7 +7,7 @@ on:
               - 'feature/*'
 
     pull_request:
-          branches:
+      branches:
               - main
     workflow_dispatch:
 
@@ -21,7 +21,7 @@ jobs:
               id: changed-files-build
               uses: tj-actions/changed-files@v47
               with:
-                    files:
+                    files: |
                           Dockerfile
                           requirements.txt
 
